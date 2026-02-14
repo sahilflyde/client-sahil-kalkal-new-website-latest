@@ -1,0 +1,78 @@
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-8);
+  padding: var(--sp-8) var(--sp-16);
+  font-size: 16px;
+  font-family: var(--font-jakarta);
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: var(--radius-md);
+  width: max-content;
+  cursor: pointer;
+
+  &--primary {
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    * {
+      color: var(--color-black-400);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--color-blue-300);
+
+    * {
+      color: var(--color-black-400);
+    }
+  }
+
+  &--greenVariant {
+    background-color: var(--color-lime-light);
+
+    * {
+      color: var(--color-lime);
+    }
+  }
+
+  /* ---------------------------------------------
+       NEW TAB VARIANT
+  ---------------------------------------------- */
+  &--tab {
+    background-color: transparent;
+    border: 1px solid #d6d2cf;
+
+    * {
+      color: #8a807a; // tab text color (inactive)
+    }
+  }
+
+  /* ---------------------------------------------
+       TAB ACTIVE STATE
+  ---------------------------------------------- */
+  &--active {
+    background-color: #b89c8b !important;
+
+    * {
+      color: #f4f2ef !important;
+    }
+  }
+} 
+
+.labelColor {
+  background: var(
+    --Event-Gradient,
+    linear-gradient(0deg, #ff2883 0%, #ff5a4d 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Responsive fix */
+@media (max-width: 600px) {
+  .label {
+    font-size: 14px;
+  }
+}

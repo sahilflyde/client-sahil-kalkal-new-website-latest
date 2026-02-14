@@ -1,0 +1,13 @@
+
+.my-component {
+  padding: 20px;
+
+  &.default {
+    background: #eee;
+  }
+
+  &.primary {
+    background: #4f46e5;
+    color: white;
+  }
+}
